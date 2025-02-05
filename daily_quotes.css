@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+.quote-container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.quote-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.quote-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.quote-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #003366;
+}
+
+.author {
+    font-size: 18px;
+    color: #666;
+}
+
+.quote-list {
+    text-align: left;
+}
+
+.quote-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.quote-item:hover {
+    transform: scale(1.02);
+    background: #f0f8ff;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
